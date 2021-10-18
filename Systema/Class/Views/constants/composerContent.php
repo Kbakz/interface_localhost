@@ -2,7 +2,7 @@
 	$composerContent = '{
 	"autoload":{
 		"psr-4":{
-			"Classes\\": "Classes/"
+			"Classes\\\": "Classes/"
 		}
 	}
 }'
