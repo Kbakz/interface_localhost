@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta property="og:image" content="http://localhost/bg.jpg">
-	<title>Teste</title>
+	<title>Projetos</title>
 	<link rel="stylesheet" type="text/css" href="Systema/Class/Views/page/css/style.css">
 </head>
 <body>
