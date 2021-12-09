@@ -1,7 +1,7 @@
 <?php 
 namespace Class\Views;
 class AutoPreencherView{
-	public static function identificarArquivos($newFolder,$tipo,$css,$js){
+	public static function identificarArquivos($newFolder,$tipo,$css,$js,$jquery){
 		if ($css == ''){
 			$cssContent = '';
 			$urlCss = '';
@@ -21,6 +21,14 @@ class AutoPreencherView{
 			file_put_contents('./'.$newFolder."/js/main.js", $jsContent);
 		}else{
 			include(__DIR__.'/constants/js.php');
+		}
+
+		if ($jquery == ''){
+			$urlJquery = '';
+		}else if($jquery != '' && $tipo == '.html'){
+			include(__DIR__.'/constants/jquery.php');
+		}else{
+			include(__DIR__.'/constants/jquery.php');
 		}
 
 		if($tipo == '.html'){
@@ -44,7 +52,7 @@ class AutoPreencherView{
 
 		if($js != '' && $tipo == '.php'){
 			mkdir($newFolder.'/Classes/Views/js');
-			file_put_contents('./'.$newFolder."/Classes/Views/js/main.js", $cssContent);
+			file_put_contents('./'.$newFolder."/Classes/Views/js/main.js", $jsContent);
 		}
 	}
 }

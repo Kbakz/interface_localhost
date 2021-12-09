@@ -8,12 +8,13 @@ public static function criarProjeto(){
 		$extArquivo = (isset($_POST['tipo']) ? $_POST['tipo'] : '');
 		$addCss = (isset($_POST['css']) ? $_POST['css'] : '');
 		$addJs = (isset($_POST['js']) ? $_POST['js'] : '');
+		$addJquery = (isset($_POST['jquery']) ? $_POST['jquery'] : '');
 
 		if($newFolder != ''){
 			if(!file_exists($newFolder)){
 				if($extArquivo != ''){
 					mkdir($newFolder);
-					\Class\Views\AutoPreencherView::identificarArquivos($newFolder,$extArquivo,$addCss,$addJs);
+					\Class\Views\AutoPreencherView::identificarArquivos($newFolder,$extArquivo,$addCss,$addJs,$addJquery);
 					\Class\Models\AlertsModel::Alerta('sucesso','Arquivo criado com sucesso');
 				}else{
 					\Class\Models\AlertsModel::Alerta('erro','Selecione o tipo de projeto');

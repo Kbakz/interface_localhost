@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta property="og:image" content="http://localhost/bg.jpg">
 	<title>Projetos</title>
+	<link rel="icon" href="ico.png" type="image/icon type">
 	<link rel="stylesheet" type="text/css" href="Systema/Class/Views/page/css/style.css">
 </head>
 <body>
@@ -34,6 +35,9 @@
 					<br>
 					<input type="checkbox" id="js" name="js">
 					<label style="display: inline-block; cursor: pointer;" for="js">JavaScript</label>
+
+					<input type="checkbox" id="jquery" name="jquery">
+					<label style="display: inline-block; cursor: pointer;" for="jquery">JQuery</label>
 
 					<br>
 					<input type="submit" name="acao" value="Criar!">
