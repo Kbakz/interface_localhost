@@ -7,7 +7,7 @@ class ListarFoldersController{
 		echo "<ul>";
 		while (false !== ($entry = $d->read()))
 		{
-		    if (is_dir($entry) && ($entry != '.') && ($entry != '..') && ($entry != 'Systema'))
+		    if (is_dir($entry) && ($entry != '.') && ($entry != '..') && ($entry != 'interface_localhost'))
 		        echo "<li><a href='{$entry}'>{$entry}</a></li>";
 		}
 		echo "</ul>";
