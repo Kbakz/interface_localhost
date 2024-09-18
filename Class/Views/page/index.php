@@ -5,7 +5,7 @@
 	<meta property="og:image" content="http://localhost/bg.jpg">
 	<title>Projetos</title>
 	<link rel="icon" href="ico.png" type="image/icon type">
-	<link rel="stylesheet" type="text/css" href="Systema/Class/Views/page/css/style.css">
+	<link rel="stylesheet" type="text/css" href="interface_localhost/Class/Views/page/css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -45,7 +45,7 @@
 		</div><!--novo-projeto-->
 	</div><!--container-->
 	
-<script src="Systema/Class/Views/page/js/jquery.js"></script>
-<script src="Systema/Class/Views/page/js/main.js"></script>
+<script src="interface_localhost/Class/Views/page/js/jquery.js"></script>
+<script src="interface_localhost/Class/Views/page/js/main.js"></script>
 </body>
 </html>
