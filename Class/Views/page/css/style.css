@@ -2,11 +2,11 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 html,body{
 	height: 100%;
-	font-family: sans-serif;
 	background-image: url(../bg2.jpg);
 	background-size: cover;
 	background-position: center;
@@ -38,12 +38,12 @@ html,body{
 	transform: translate(-50% , -50%);
 	padding: 30px 20px;
 	backdrop-filter: blur(3px);
-	box-shadow: 0px 5px 15px 5px #e5f7ffa7;
-	border: 4px solid #e5f7ff;
+	box-shadow: 0px 5px 15px 5px #000000c9;
+	/* border: 4px solid #e5f7ff; */
 }
 
 .lista-pastas{
-	padding: 15px 10px;
+	padding: 30px 25px;
 	background-color: #e5f7ff;
 	border-radius: 20px;
 }
@@ -52,12 +52,12 @@ h1{
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 15px;
-	color: #F24E02;
+	color: #024EF2;
 }
 
-li{list-style-type: none;}
+.lista-pastas li{list-style-type: none;}
 
-a{
+.lista-pastas a{
 	display: block;
 	text-decoration: none;
 	padding: 10px 0;
@@ -70,7 +70,7 @@ a{
 	font-size: 18px;
 }
 
-a:hover{
+.lista-pastas a:hover{
 	color: #8e54f9;
 	text-shadow: #5602F5 1px 0 10px;
 }
@@ -78,18 +78,19 @@ a:hover{
 .novo-projeto{
 	text-align: right;
 	margin-top: 30px;
-	color: white;
-	
 }
 
 .btn-new{
-	padding: 10px 30px;
+	padding: 15px 20px;
 	cursor: pointer;
 	display: inline-block;
+	background-color: #c518c2;
+	color: white;
+	border-radius: 15px;
 	transition: 0.3s;
 }
 
-.btn-new:hover span{ color: #ff5b28;}
+.btn-new:hover{ background-color: #990196;}
 
 .novo-projeto form{
 	display: none;
@@ -104,6 +105,7 @@ a:hover{
 	padding: 20px 10px;
 	border-radius: 10px;
 	z-index: 1;
+	color: white;
 }
 
 .novo-projeto .close{ text-align: right;}
