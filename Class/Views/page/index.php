@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta property="og:image" content="http://localhost/bg.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Projetos</title>
 	<link rel="icon" href="ico.png" type="image/icon type">
 	<link rel="stylesheet" type="text/css" href="interface_localhost/Class/Views/page/css/style.css">
