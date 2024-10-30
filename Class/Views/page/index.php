@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Projetos</title>
 	<link rel="icon" href="ico.png" type="image/icon type">
-	<link rel="stylesheet" type="text/css" href="interface_localhost/Class/Views/page/css/style.css">
+	<link rel="stylesheet" type="text/css" href="interface_localhost/Class/Views/css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -19,33 +19,22 @@
 			</div><!--btn-new-->
 			<form method="post">
 				<div class="close"><span>X</span></div>
-					<label for="nome">Nome do projeto</label>
-					<input type="text" id="nome" name="nome">
 
-					<label for="tipo">Tipo</label>
-					<select id="tipo" name="tipo">
-						<option disabled selected>Selecione o tipo do projeto</option>
-						<option value=".php">PHP</option>
-						<option value=".html">HTML</option>
-					</select>
-					<p>Arquivos adicionais</p>
-					
-					<input type="checkbox" id="css" name="css">
-					<label style="display: inline-block; cursor: pointer;" for="css">Css</label>
-					<br>
-					<input type="checkbox" id="js" name="js">
-					<label style="display: inline-block; cursor: pointer;" for="js">JavaScript</label>
+				<label for="nome-projeto">Nome do projeto</label>
+				<input type="text" id="nome-projeto" name="nome-projeto">
 
-					<input type="checkbox" id="jquery" name="jquery">
-					<label style="display: inline-block; cursor: pointer;" for="jquery">JQuery</label>
+				<label for="php">PHP</label>
+				<input type="radio" name="tipo" id="php" value="php">
 
-					<br>
-					<input type="submit" name="acao" value="Criar!">
-				</form>
+				<label for="html">HTML</label>
+				<input type="radio" name="tipo" id="html" value="html">
+
+				<input type="submit" name="criar-projeto" value="Criar!">
+			</form>
 		</div><!--novo-projeto-->
 	</div><!--container-->
 	
-<script src="interface_localhost/Class/Views/page/js/jquery.js"></script>
-<script src="interface_localhost/Class/Views/page/js/main.js"></script>
+<script src="interface_localhost/Class/Views/js/jquery.js"></script>
+<script src="interface_localhost/Class/Views/js/main.js"></script>
 </body>
 </html>

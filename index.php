@@ -1,5 +1,6 @@
 <?php 
 require('vendor/autoload.php');
-\Class\Controllers\CriarNovoController::criarProjeto();
+include('config.php');
+\Class\Controllers\CriarProjetoController::criarProjeto();
 \Class\Views\RenderView::exibir();
 ?>
