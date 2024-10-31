@@ -7,7 +7,7 @@
 
 html,body{
 	height: 100%;
-	/* background-image: url(../imagens/bg2.jpg); */
+	background-image: url(../imagens/bg2.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -48,7 +48,7 @@ html,body{
 	border-radius: 20px;
 }
 
-h1{
+h1,h2{
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 15px;
@@ -80,7 +80,7 @@ h1{
 	margin-top: 30px;
 }
 
-.btn-new{
+.btn{
 	padding: 15px 20px;
 	cursor: pointer;
 	display: inline-block;
@@ -88,32 +88,50 @@ h1{
 	color: white;
 	border-radius: 15px;
 	transition: 0.3s;
+	border: none;
+	font-size: 20px;
 }
 
-.btn-new:hover{ background-color: #990196;}
+.btn:hover{ background-color: #990196;}
 
 .novo-projeto form{
 	display: none;
 	position: absolute;
+	left: 0;
+	top: 0;
 	width: 100%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50% , -50%);
-	background: rgba(0, 0, 0, 0.8);
-	backdrop-filter: blur(50px);
-	text-align: left;
-	padding: 20px 10px;
+	height: 100%;
+	text-align: start;
+	padding: 30px 20px;
 	border-radius: 10px;
-	z-index: 1;
 	color: white;
+	z-index: 1;
 }
 
-.novo-projeto .close{ text-align: right;}
+.novo-projeto .close{ 
+	width: 100%;
+	text-align: right;
+}
+
+.form-content{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	background-color: #e5f7ff;
+	border-radius: 20px;
+	font-size: 18px;
+	padding: 0 35px;
+	color: #5602F5;
+}
 
 .novo-projeto .close span{
 	cursor: pointer;
 	padding: 5px;
 }
+
+.novo-projeto .form-single{ width: 100%;}
 
 .novo-projeto label{
 	margin-bottom: 5px;
@@ -125,32 +143,11 @@ h1{
 	width: 100%;
 	padding-left: 5px;
 	border: 0;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #5602F5;
 	margin-bottom: 10px;
 	outline: none;
-	color: white;
 	font-size: 20px;
 	font-weight: lighter;
 }
 
-.novo-projeto select{outline: none; 
-	width: 100%;
-	padding-left: 5px;
-	border: 0;
-	border-bottom: 1px solid white;
-	margin-bottom: 10px;
-	outline: none;
-	font-size: 20px;
-	font-weight: lighter;;}
-
 .novo-projeto p{margin: 20px 0; border-bottom: 1px dotted;}
-
-.novo-projeto input[type=submit]{
-	display: inline-block;
-	border: none;
-	background: transparent;
-	color: #ff5b28;
-	font-size: 20px;
-	margin-top: 15px;
-	cursor: pointer;
-}

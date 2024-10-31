@@ -1,11 +1,11 @@
 $(function(){
 	var form = $('.novo-projeto form');
-	$('.novo-projeto .btn-new').click(function(){
-		form.fadeIn();
+	$('.novo-projeto .btn').click(function(){
+		form.fadeToggle();
 	})
 
 	$('.novo-projeto .close span').click(function(){
-		form.fadeOut();
+		form.fadeToggle();
 	})
 
 	if($('.alerta').is(':visible')){
