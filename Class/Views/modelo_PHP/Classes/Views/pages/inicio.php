@@ -3,7 +3,6 @@
   $css = [''];
   $js = [''];
   include("header.php");
-  $menuSelected = 'inicio';
 ?>
 
 <h1>Olá mundo</h1>
