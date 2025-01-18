@@ -76,8 +76,16 @@ h1,h2{
 }
 
 .novo-projeto{
-	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
 	margin-top: 30px;
+
+	& a{
+		font-size: 18px;
+		text-decoration: none;
+		color: white;
+	}
 }
 
 .btn{

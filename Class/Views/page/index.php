@@ -14,7 +14,9 @@
 			<?php  \Class\Controllers\ListarFoldersController::listarPastas(); ?>
 		</div><!--lista-pastas-->
 		<div class="novo-projeto">
+			<a href="http://localhost/phpmyadmin">Acessar banco de dados</a>
 			<div class="btn">
+				
 				<span>Criar novo projeto</span>
 			</div><!--btn-new-->
 			<form method="post">
@@ -35,6 +37,7 @@
 					</div>
 
 					<div class="form-single">
+						
 						<input type="submit" class="btn" name="criar-projeto" value="Criar!">
 					</div>
 					
