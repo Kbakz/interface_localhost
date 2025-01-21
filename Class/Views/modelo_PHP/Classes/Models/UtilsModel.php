@@ -15,9 +15,17 @@
 			die();
 		}
 
-		public static function inserir($tabela,$campos,$val){
+		public static function inserir($tabela,$array){
+			$campos = '';
+			for($i = 0; $i < count($array); $i++){
+				$campos .= '?';
+				if($i != count($array) - 1){
+					$campos .= ',';
+				}
+			}
+
 			$sql = \Classes\MySql::conectar()->prepare("INSERT INTO `$tabela` VALUES(null,".$campos.")");
-            $sql->execute($val);
+            $sql->execute($array);
 		}
 
 		public static function selecionar($tabela,$campo,$valor){
