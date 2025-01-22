@@ -28,21 +28,21 @@
             $sql->execute($array);
 		}
 
-		public static function selecionar($tabela,$campo,$valor){
+		public static function selecionar($tabela,$campo = '1',$valor = '1'){
 			$sql = \Classes\MySql::conectar()->prepare("SELECT * FROM `$tabela` WHERE $campo = ?");
-			$sql->execute(array($valor));
+			$sql->execute([$valor]);
 			return $sql->fetch();
 		}
 
-		public static function selecionarTudo($tabela,$campo,$valor,$coluna = 'id',$ordem = 'ASC'){
+		public static function selecionarTudo($tabela,$campo = '1',$valor = '1',$coluna = 'id',$ordem = 'ASC'){
 			$sql = \Classes\MySql::conectar()->prepare("SELECT * FROM `$tabela` WHERE $campo = ? ORDER BY $coluna $ordem");
-			$sql->execute(array($valor));
+			$sql->execute([$valor]);
 			return $sql->fetchAll();
 		}
 
 		public static function deletar($tabela,$id){
 			$sql = \Classes\MySql::conectar()->prepare("DELETE FROM `$tabela` WHERE id = ?");
-			$sql->execute(array($id));
+			$sql->execute([$id]);
 		}
     }
 ?>
